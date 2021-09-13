@@ -12,6 +12,7 @@ if( !empty($block['align']) ) {
   $className .= ' align' . $block['align'];
 }
 
+$image = get_field('image');
 $link = get_field('link');
 $button_text = get_field('button_text');
 $content = get_field('content');
@@ -26,7 +27,7 @@ $color = (get_field('color_pick') === 'green') ? 'green' :
 
 
         <section class="section indikaattorit alignfull">
-          <div class="container <?=$color; ?> section ">
+          <div class="container <?=$color; ?> section">
             <div class="columns section is-vcentered is-multiline">
               <a class="" href="<?= $link ?>">
                 <?php if( !empty(get_field('image'))) {?>

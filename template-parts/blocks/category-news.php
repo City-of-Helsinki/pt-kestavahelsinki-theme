@@ -46,36 +46,29 @@ if ($cat) {
 
 $query = new WP_Query($args);
 
-if ($query->have_posts()) :
+if ($query->have_posts()) : 
   global $post;
   ?> 
-  <section id="uutiset" class="section latest alignfull <?= $color; ?>">
+  <section id="uutiset" class="section latest alignfull <?= $color; ?>" data-amount="<?php echo $amount; ?>">
     <div class="container">
       <h2 class="section-title"><?= $title ?></h2>
       <div class="columns is-multiline">
-        <?php while ($query->have_posts()) : 
-          $query->the_post(); 
-          $ingressi = get_the_excerpt($post->ID);
-          ?>
 
-          <a href="<?php the_permalink(); ?>" class="column is-4 is-12-mobile">
-            <div class="element">
-              <figure class="image is-3by2">
-                <?php if (has_post_thumbnail()) : ?>
-                 <img class="is-square" src="<?= get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" alt="">
-               <?php else : ?>
-                <img class="is-square" src="https://kestava.helsinki/content/uploads/2021/05/pictureplaceholder3_2_M.png" alt="">
-              <?php endif; ?>
-            </figure>
-            <div class="news-content">
-              <p class="date"><?= get_the_date('d.m.Y'); ?></p>
-              <h3 class="title is-4 is-medium"><?php the_title(); ?></h3>
-              <p class="excerpt"><?php echo wp_trim_words($ingressi, 11, '...' ); ?></p></div>
-              <div class="hds-icon hds-icon--size-l hds-icon--arrow-right"></div>
-            </div>
-          </a>
+        <?php while ($query->have_posts()) : $query->the_post(); ?>
+
+          <?php get_template_part( 'template-parts/blocks/category-news', 'content' ); ?>
+
         <?php endwhile; wp_reset_postdata(); ?> 
       </div>
+
+      <?php if(is_front_page()): ?>
+        <a href="<?php echo network_site_url(); ?>/uutiset">Kaikki uutiset</a>
+      <?php endif; ?>
+
+      <?php if(is_page("uutiset")): ?>
+        <button class="load-more button"><?php pll_e('Lataa lisää'); ?></button>
+      <?php endif; ?>
+
     </div>
   </section>
 <?php endif; ?>

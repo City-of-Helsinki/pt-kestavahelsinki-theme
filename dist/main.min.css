@@ -9744,6 +9744,12 @@ body {
   }
 }
 
+.load-more.button {
+  display: flex;
+  margin: auto !important;
+  width: 50%;
+}
+
 .card {
   border: none;
   box-shadow: none;
@@ -9878,11 +9884,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   .menu li.menu-item-has-children:hover .sub-menu {
-    display: none;
+    display: block;
   }
 }
 .menu li.menu-item-has-children a:after {
-  content: "";
+  content: "\f107";
   display: inline-block;
   font-family: FontAwesome;
   font-size: 22px;
@@ -11098,7 +11104,7 @@ button.button.is-info {
   width: 100px;
 }
 .indikaattorit .button {
-  margin-left: 40px;
+  margin-left: 80px;
 }
 @media screen and (max-width: 768px) {
   .indikaattorit .button {
@@ -11107,6 +11113,14 @@ button.button.is-info {
 }
 .indikaattorit img {
   margin-right: 15px;
+}
+.indikaattorit p {
+  margin-left: 80px;
+}
+@media screen and (max-width: 768px) {
+  .indikaattorit p {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .indikaattorit .image.is-1by1 {
