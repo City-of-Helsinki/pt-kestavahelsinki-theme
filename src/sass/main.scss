@@ -149,6 +149,15 @@ body {
   }
 }
 
+.load-more {
+
+  &.button {
+    display: flex;
+    margin: auto!important;
+    width: 50%;
+  }
+}
+
 .card {
   border: none;
   box-shadow: none;
@@ -310,7 +319,7 @@ body {
           left: -25px;
           min-width: 295px;
           @include mobile {
-            display: none;
+            display: block;
           }
         }
       }
@@ -1040,6 +1049,7 @@ button.button.is-info {
   .editor-card {
     font-size: 20px;
     padding: 40px 60px;
+    margin: 40px 0;
 
     @include mobile {
       padding: 15px 25px;
@@ -1685,7 +1695,7 @@ button.button.is-info {
   }
 
   .button {
-    margin-left: 40px;
+    margin-left: 80px;
 
     @include mobile {
       margin: 0;
@@ -1694,6 +1704,13 @@ button.button.is-info {
 
   img {
     margin-right: 15px;
+  }
+
+  p {
+    margin-left: 80px;
+    @include mobile {
+      margin: 0;
+    }
   }
 
   @include mobile {
@@ -1787,4 +1804,3 @@ article {
 .wave-bottom.bc-keltainen:after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 20 200' style='enable-background:new 0 0 20 800;' xml:space='preserve'%3E %3Cstyle type='text/css'%3E .kf%7Bfill:%23FFE977;%7D %3C/style%3E %3Ctitle%3Ekoro-basic-fog-0%3C/title%3E %3Cpath class='kf' d='M0,800h800'/%3E %3Cpath class='kf' d='M0,800h20V0c-4.9,0-5,2.6-9.9,2.6S5,0,0,0V800z'/%3E %3C/svg%3E ")!important;
 }
-

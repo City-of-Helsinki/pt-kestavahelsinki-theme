@@ -32,7 +32,8 @@
 				}
 				?>
 			</div>
-			<p class="date"><?= get_the_date('d.m.Y'); ?></p>
+			<?php if (in_category('uutiset')) { ?>
+				<p class="date"><?= get_the_date('d.m.Y'); ?></p> <?php }?>
 			</div>
 
 
