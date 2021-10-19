@@ -1290,6 +1290,10 @@ button.button.is-info {
     }
   }
 
+  .item-video {
+    height: 615px;
+  }
+
   .owl-nav {
     position: absolute;
     top: 50%;
@@ -1323,6 +1327,14 @@ button.button.is-info {
   &#sync2 {
 
     @include mobile {
+      display: none;
+    }
+
+    .item-video {
+      height: 120px;
+    }
+
+    .owl-video-play-icon {
       display: none;
     }
 

@@ -10523,6 +10523,7 @@ button.button.is-info {
 .entry-content .editor-card {
   font-size: 20px;
   padding: 40px 60px;
+  margin: 40px 0;
 }
 @media screen and (max-width: 768px) {
   .entry-content .editor-card {
@@ -10732,6 +10733,9 @@ button.button.is-info {
   max-height: 615px;
   height: 100%;
 }
+.owl-carousel .item-video {
+  height: 615px;
+}
 .owl-carousel .owl-nav {
   position: absolute;
   top: 50%;
@@ -10768,6 +10772,12 @@ button.button.is-info {
   .owl-carousel#sync2 {
     display: none;
   }
+}
+.owl-carousel#sync2 .item-video {
+  height: 120px;
+}
+.owl-carousel#sync2 .owl-video-play-icon {
+  display: none;
 }
 .owl-carousel#sync2 .owl-item .item {
   height: 120px;

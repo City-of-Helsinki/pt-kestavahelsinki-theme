@@ -12,29 +12,26 @@
 $rows = get_field('videos');
 if( $rows ) : ?>
 
-  <section class="alignwide" style="width:920px;margin:auto;">
-
-  
+  <section class="editor-slider alignwide" style="width:920px;">
    <div id="sync1" class="owl-carousel owl-theme">
 
      <?php foreach( $rows as $row ) :
       $video = $row['video']; 
       ?>
 
-      <div class="item">
-      <iframe allowfullscreen='true' allow='autoplay' scrolling='no' src="<?= $video; ?>"></iframe>
-      </div>
+      <div class="item-video"><a class="owl-video" href="<?= $video; ?>"></a></div>
 
 
     <?php endforeach; ?>
   </div>
 
   <div id="sync2" class="owl-carousel owl-theme">
+
    <?php foreach( $rows as $row ) :
-    $video = $row['video']; ?>
-    <div class="item">
-    <iframe allowfullscreen='true' allow='autoplay' scrolling='no' src="<?= $video; ?>"></iframe>
-    </div>
+    $video = $row['video']; 
+    ?>
+
+    <div class="item-video"><a class="owl-video" href="<?= $video; ?>"></a></div>
 
   <?php endforeach; ?>
 </div>

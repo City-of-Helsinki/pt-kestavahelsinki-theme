@@ -24,7 +24,6 @@
       loop: true,
       autoHeight: false,
       video: true,
-      lazyLoad: true,
       responsiveRefreshRate: 200,
       navText: ['<div class="hds-icon hds-icon--size-xl hds-icon--arrow-left">', '<div class="hds-icon hds-icon--size-xl hds-icon--arrow-right">'],
     }).on('changed.owl.carousel', syncPosition);
