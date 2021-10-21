@@ -11072,6 +11072,17 @@ button.button.is-info {
   border-radius: 0;
   padding: 25px;
 }
+.button:hover {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+.button:focus {
+  box-shadow: 0 0 0 3px #0072c6 !important;
+  transform: translateZ(0);
+  border-color: #000000 !important;
+  outline: none;
+}
 
 .overlapping {
   position: relative;
