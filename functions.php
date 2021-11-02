@@ -467,7 +467,7 @@ function kestavahelsinki_translates() {
 		pll_register_string( 'Tapahtumat', 'Tapahtumat', 'kestavahelsinki', false );
 		pll_register_string( 'Lue lisää', 'Lue lisää', 'kestavahelsinki', false );
 		pll_register_string( 'Lataa lisää', 'Lataa lisää', 'kestavahelsinki', false );
-		pll_register_string( 'Kaikki uutiset', 'Kaikki uutiset', 'kestavahelsinki', false );
+		pll_register_string( 'Kaikki uutiset', 'Kaikki uutiset', 'kestavahelsinki');
 		pll_register_string( 'Yhteystiedot', 'Yhteystiedot', 'kestavahelsinki', false );
 		pll_register_string( 'Hae yhteystietoja', 'Hae yhteystietoja', 'kestavahelsinki', false );
 		pll_register_string( 'Siirry sisältöön', 'Siirry sisältöön', 'kestavahelsinki', false );
@@ -476,6 +476,7 @@ function kestavahelsinki_translates() {
 		pll_register_string( 'Haku', 'Haku', 'kestavahelsinki', false );
 		pll_register_string( 'Asiasanat', 'Asiasanat', 'kestavahelsinki', false );
 		pll_register_string( 'Sinua voisi kiinnostaa', 'Sinua voisi kiinnostaa', 'kestavahelsinki', false );
+		pll_register_string( '/uutiset', '/uutiset', 'kestavahelsinki');
 
 	}
 }

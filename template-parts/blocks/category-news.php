@@ -62,7 +62,7 @@ if ($query->have_posts()) :
       </div>
 
       <?php if(is_front_page()): ?>
-        <a href="<?php echo network_site_url(); ?>/uutiset" style="margin-left: 0; margin-top: 0;" class="button">Kaikki uutiset</a>
+        <a href="<?php echo network_site_url(); ?><?php pll_e('/uutiset');?>" style="margin-left: 0; margin-top: 0;" class="button"><?php pll_e('Kaikki uutiset'); ?></a>
       <?php endif; ?>
 
       <?php if(is_page("uutiset")): ?>
