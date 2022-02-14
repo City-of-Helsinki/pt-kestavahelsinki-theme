@@ -1290,8 +1290,17 @@ button.button.is-info {
     }
   }
 
-  .item-video {
-    height: 615px;
+  .item {
+    height: 520px;
+
+    iframe {
+      height: 520px;
+      width: 100%;
+
+      .rmp-overlay-button.rmp-color-bg {
+        display: none!important;
+      }
+    }
   }
 
   .owl-nav {
@@ -1330,8 +1339,15 @@ button.button.is-info {
       display: none;
     }
 
-    .item-video {
+    .item {
       height: 120px;
+      
+      iframe {
+
+        .rmp-overlay-button.rmp-color-bg {
+          display: none!important;
+        }
+      }
     }
 
     .owl-video-play-icon {
@@ -1547,11 +1563,12 @@ button.button.is-info {
   }
 
   .button {
-    margin-top: 120px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 80px;
     @include mobile {
-      margin-right: 200px;
-      margin-left: 10px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 

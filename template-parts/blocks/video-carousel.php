@@ -19,7 +19,9 @@ if( $rows ) : ?>
       $video = $row['video']; 
       ?>
 
-      <div class="item-video"><a class="owl-video" href="<?= $video; ?>"></a></div>
+      <div class="item">
+      <iframe style='position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;' allowfullscreen='true' allow='autoplay' scrolling='no' src="<?= $video; ?>"></iframe>
+      </div>
 
 
     <?php endforeach; ?>
@@ -31,7 +33,9 @@ if( $rows ) : ?>
     $video = $row['video']; 
     ?>
 
-    <div class="item-video"><a class="owl-video" href="<?= $video; ?>"></a></div>
+      <div class="item">
+      <iframe style='position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;z-index:-1;' allowfullscreen='true' allow='autoplay' controls='0' scrolling='no' src="<?= $video; ?>"></iframe>
+      </div>
 
   <?php endforeach; ?>
 </div>

@@ -10733,8 +10733,15 @@ button.button.is-info {
   max-height: 615px;
   height: 100%;
 }
-.owl-carousel .item-video {
-  height: 615px;
+.owl-carousel .item {
+  height: 520px;
+}
+.owl-carousel .item iframe {
+  height: 520px;
+  width: 100%;
+}
+.owl-carousel .item iframe .rmp-overlay-button.rmp-color-bg {
+  display: none !important;
 }
 .owl-carousel .owl-nav {
   position: absolute;
@@ -10773,8 +10780,11 @@ button.button.is-info {
     display: none;
   }
 }
-.owl-carousel#sync2 .item-video {
+.owl-carousel#sync2 .item {
   height: 120px;
+}
+.owl-carousel#sync2 .item iframe .rmp-overlay-button.rmp-color-bg {
+  display: none !important;
 }
 .owl-carousel#sync2 .owl-video-play-icon {
   display: none;
