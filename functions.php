@@ -472,11 +472,14 @@ function kestavahelsinki_translates() {
 		pll_register_string( 'Hae yhteystietoja', 'Hae yhteystietoja', 'kestavahelsinki', false );
 		pll_register_string( 'Siirry sisältöön', 'Siirry sisältöön', 'kestavahelsinki', false );
 		pll_register_string( 'Hae', 'Hae', 'kestavahelsinki', false );
+		pll_register_string( 'Hae sivustolta', 'Hae sivustolta', 'kestavahelsinki', false );
 		pll_register_string( 'Hakutulokset', 'Hakutulokset', 'kestavahelsinki', false );
 		pll_register_string( 'Haku', 'Haku', 'kestavahelsinki', false );
 		pll_register_string( 'Asiasanat', 'Asiasanat', 'kestavahelsinki', false );
 		pll_register_string( 'Sinua voisi kiinnostaa', 'Sinua voisi kiinnostaa', 'kestavahelsinki', false );
 		pll_register_string( '/uutiset', '/uutiset', 'kestavahelsinki');
+		pll_register_string( 'Sivustohaku, syötä hakusana.', 'Sivustohaku, syötä hakusana.', 'kestavahelsinki');
+		pll_register_string( 'Avaa sivustohaku', 'Avaa sivustohaku', 'kestavahelsinki');
 
 	}
 }
@@ -570,6 +573,24 @@ function theme_archive_title( $title ) {
 }
 
 add_filter( 'get_the_archive_title', 'theme_archive_title' );
+
+add_filter('language_attributes', 'theme_set_language_code');
+
+function theme_set_language_code( $output) {
+
+  switch ($output) {
+    case 'lang="sv-SE"':
+      $output = 'lang="se"';
+      break;
+    case 'lang="en-GB"':
+      $output = 'lang="en"';
+      break;
+    default:
+      break;
+  }
+
+  return $output;
+}
 
 
 

@@ -16,6 +16,7 @@
             class="hds-search-input__input"
             type="text"
             name="s"
+            aria-label="<?php pll_e('Sivustohaku, syötä hakusana.') ?>>"
             />
             <div class="hds-search-input__buttons">
               <button

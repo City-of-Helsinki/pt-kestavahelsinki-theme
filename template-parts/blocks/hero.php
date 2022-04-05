@@ -40,7 +40,9 @@ $video = get_field('video');
 </section>
 <section class="section mobile-hero mobile-only">
   <div class="container hero-box">
-    <div style='position:relative;width:383px;height:215px;background-color:#ececec;right:8px;'><iframe style='position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;' allowfullscreen='true' allow='autoplay' scrolling='no' src="<?= $video; ?>"></iframe></div>
+    <div class="hero-box__videowrapper">
+      <div style='background-color:#ececec;right:8px;'><iframe style='' allowfullscreen='true' allow='autoplay' scrolling='no' src="<?= $video; ?>"></iframe></div>
+    </div>
     <div class="text">
     <?= $text; ?>
     </div>

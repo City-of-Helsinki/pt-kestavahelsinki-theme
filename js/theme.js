@@ -1,5 +1,23 @@
 (function($) {
 
+  function initFocusHoverEffectOnSearchButton() {
+    const paramClass = 'search-open-wrapper--hover';
+
+    $(".search-open").hover(function(){
+      $(this).closest('.search-open-wrapper').toggleClass(paramClass);
+    }, function(){
+      $(this).closest('.search-open-wrapper').toggleClass(paramClass);
+    });
+
+    $('.search-open').focusin(  
+      function(){  
+        $(this).closest('.search-open-wrapper').toggleClass(paramClass);
+      }).focusout(  
+      function(){  
+        $(this).closest('.search-open-wrapper').toggleClass(paramClass);
+      });
+  }
+
   $(document).ready(function() {
 
    $('.home .current-menu-item a').css('font-family', 'HelsinkiGrotesk-Regular, Georgia, sans-serif');
@@ -7,7 +25,17 @@
    $(".search-open").click(function(){
     $('.search-box').slideToggle('fast');
     $('.search-box').addClass('open');
+
+    var aria_expanded =  $('.search-box.open').attr('aria-expanded');
+    aria_expanded = aria_expanded === 'true' ? 'false' : 'true';
+
+    $('.search-box.open').attr('aria-expanded',  aria_expanded);
+
     $('.search-open .fa-search, .search-open .fa-times').toggle();
+
+    if( aria_expanded === 'true' ) {
+      $('#s').focus();
+    }
   });
 
     // Owl Carousel DOM Elements
@@ -44,6 +72,9 @@
     carouselSyncCurrentClass();
   });
 
+  // add hover and focus effect on page search button
+  initFocusHoverEffectOnSearchButton();
+
 
   function carouselSyncCurrentClass() {
     setTimeout(function () {
@@ -76,6 +107,8 @@
 		}
 		mobilePanelVisible = !mobilePanelVisible;
 	});
+
+  /*
     var mobileSubMenuVisible = false;
     $('a::after').click(function(){
       if(mobileSubMenuVisible) {
@@ -85,7 +118,17 @@
       }
       mobileSubMenuVisible = !mobileSubMenuVisible;
     });
-    
+  */
+
+    $('.menu .menu-item-has-children').click(function(e) {
+      // opens sub menu, responsive view
+      $(this).toggleClass('menu-item---submenu-open');
+    });
+
+    $('.sub-menu .menu-item').click(function(e) {
+      // stops shutting submenu, responsive view
+      e.stopPropagation(); //stops the parent from toggling
+    });
 
 
   $('#uutiset button.load-more').click(function(){
