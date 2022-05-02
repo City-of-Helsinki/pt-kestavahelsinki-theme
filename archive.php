@@ -88,20 +88,6 @@ $image = get_field('category_image' , $term);
 			</section>
 		</div>
 
-
-		<div class="container container-inner">
-			<section class="section">
-				<div class="content">
-					<figure class="has-text-left">
-						<blockquote>
-							"Tähän komponenttiin voi lisätä kiinnostavan lainauksen"
-						</blockquote>
-						<figcaption>Etunimi, Sukunimi, Titteli</figcaption>
-					</figure>
-				</div>
-			</section>
-		</div>
-
 	</main><!-- #main -->
 </div><!-- #primary -->
 
