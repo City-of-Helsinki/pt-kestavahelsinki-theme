@@ -65,7 +65,7 @@ if ($query->have_posts()) :
         <a href="<?php echo network_site_url(); ?><?php pll_e('/uutiset');?>" style="margin-left: 0; margin-top: 0;" class="button"><?php pll_e('Kaikki uutiset'); ?></a>
       <?php endif; ?>
 
-      <?php if(is_page("uutiset")): ?>
+      <?php if(is_page(array( "uutiset", "news", "nyheter" ))): ?>
         <button class="load-more button"><?php pll_e('Lataa lisää'); ?></button>
       <?php endif; ?>
 
