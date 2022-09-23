@@ -19,8 +19,7 @@
 }
 
 .repeat-horizontal .acf-repeater tr.acf-row:not(.acf-clone) td.acf-fields {
-  width: 100% !important;
-  /* important is necessary because it gets overwritten on drag&drop  */
+  width: 100% !important; /* important is necessary because it gets overwritten on drag&drop  */
 }
 
 /*# sourceMappingURL=editor.min.css.map*/
