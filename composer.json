@@ -1,17 +1,10 @@
 {
     "name": "astehelsinki/pt-kestavahelsinki-theme",
-    "description": "",
-    "version": "1.0.0",
+    "type": "wordpress-theme",
     "authors": [
         {
             "email": "kehitys@astehelsinki.fi",
             "name": "Aste Helsinki Oy"
         }
-    ],
-    "type": "wordpress-theme",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "composer/installers": "~1.0.0"
-    }
+    ]
 }
