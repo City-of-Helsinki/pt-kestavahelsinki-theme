@@ -1,10 +1,10 @@
 <?php
 $ingressi = get_the_excerpt($postID);
 
-if (get_field('rss_url', $post->ID)) {
-  $link = get_field('rss_url', $post->ID);
+if (get_field('rss_url', $postID)) {
+  $link = get_field('rss_url', $postID);
 } else {
-  $link = get_the_permalink($post->ID);
+  $link = get_the_permalink($postID);
 }
 
 ?>
