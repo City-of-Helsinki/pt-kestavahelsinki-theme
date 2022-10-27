@@ -3,8 +3,6 @@ global $post;
 
 $ingressi = get_the_excerpt($post->ID);
 
-var_dump($post->ID);
-
 if (get_field('rss_url', $post->ID)) {
   $link = get_field('rss_url', $post->ID);
 } else {
