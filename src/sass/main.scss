@@ -1,3 +1,7 @@
+/*
+ * Version: 1.0.4
+ */
+
 @charset 'utf-8';
 
 // The container horizontal gap, which acts as the offset for breakpoints
@@ -25,16 +29,6 @@ $fullhd: 1200px + (2 * $gap)!default;
 @import '../../node_modules/hds-core/lib/icons/all.css';
 @import '../../node_modules/hds-core/lib/icons/icon.css';
 @import '../../node_modules/hds-core/lib/components/search-input/search-input.min.css';
-
-// @import 'style-editor.scss';
-
-/*
-size-xs
-size-s
-size-m
-size-l
-size-xl
-*/
 
 @font-face {
   font-family: HelsinkiGrotesk-Regular;
