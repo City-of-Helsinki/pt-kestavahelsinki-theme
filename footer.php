@@ -16,8 +16,25 @@
 <footer class="footer wave-bottom bc-valkoinen">
 	<div class="container">
 		<div class="content">
-    <h2><?php pll_e('Yhteystiedot') ?></h2>
-      <a href="/yhteystiedot"><?php pll_e('Hae yhteystietoja') ?></a>
+    <?php 
+      if( have_rows('footer', 'options') ):
+        while( have_rows('footer', 'options') ) : the_row();
+        
+      $footer_fi = get_sub_field('footer_fi');
+      $footer_en = get_sub_field('footer_en');
+      $footer_sv = get_sub_field('footer_sv');
+      $lang = pll_current_language();
+      
+              if ($lang == 'fi') {
+                echo $footer_fi;
+              } elseif($lang == 'en') {
+                echo $footer_en;
+              } else {
+                echo $footer_sv;
+             } ?>
+             
+            <? endwhile;
+          endif;?>
     </div>
 
     <?php
