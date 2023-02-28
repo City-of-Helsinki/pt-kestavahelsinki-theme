@@ -539,7 +539,8 @@ function kestavahelsinki_multilang_logo( $value ) {
 		$logos = array(
 			'fi' => get_stylesheet_directory_uri() . '/images/helsinki-fi.svg',
 			'en' => get_stylesheet_directory_uri() . '/images/helsinki-fi.svg',
-			'se' => get_stylesheet_directory_uri() . '/images/helsinki-fi.svg',
+			'sv' => get_stylesheet_directory_uri() . '/images/helsinki-se.svg',
+			'se' => get_stylesheet_directory_uri() . '/images/helsinki-se.svg',
 		);
 		$default_logo = $logos['fi'];
 		$current_lang = pll_current_language();

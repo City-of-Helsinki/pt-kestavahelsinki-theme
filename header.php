@@ -50,7 +50,7 @@
 					<div class="container">
 						<div class="logo columns is-mobile is-vcentered desktop-only">
 							<?php the_custom_logo(); ?>
-							<div class="site-brand">Kestävä Helsinki</div>
+							<div class="site-brand"><?php bloginfo( 'name' ); ?></div>
 						</div>
 						<div class="nav-end">
 							<div class="columns">
@@ -87,7 +87,7 @@
 						</div>
 						<div class="mobile-logo is-mobile columns is-vcentered mobile-only">
 							<?php the_custom_logo(); ?>
-							<div class="site-brand mobile-only">Kestävä Helsinki</div>
+							<div class="site-brand mobile-only"><?php bloginfo( 'name' ); ?></div>
 						</div>
 						<div class="mobile-only right">
 							<?php pll_the_languages( array( 'dropdown' => 1 ) ); ?>
