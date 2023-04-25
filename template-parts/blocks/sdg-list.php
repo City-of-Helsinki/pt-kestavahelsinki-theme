@@ -29,28 +29,28 @@
   </div>
 
   <div class="box-container">
-    <div class="box" id="box1"><?php the_field('ei_koyhyytta');?></div>
-    <div class="box" id="box2"><?php the_field('ei_nalkaa');?></div>
-    <div class="box" id="box3"><?php the_field('terveytta_ja_hyvinvointia');?></div>
-    <div class="box" id="box4"><?php the_field('hyva_koulutus');?></div>
-    <div class="box" id="box5"><?php the_field('sukupuolten_tasaarvo');?></div>
-    <div class="box" id="box6"><?php the_field('puhdas_vesi_ja_sanitaatio');?></div>
-    <div class="box" id="box7"><?php the_field('edullista_ja_puhdasta_energiaa');?></div>
-    <div class="box" id="box8"><?php the_field('ihmisarvoista_tyota_ja_talouskasvua');?></div>
-    <div class="box" id="box9"><?php the_field('kestavaa_teollisuutta');?></div>
-    <div class="box" id="box10"><?php the_field('eriarvoisuuden_vahentaminen');?></div>
-    <div class="box" id="box11"><?php the_field('kestavat_kaupungit');?></div>
-    <div class="box" id="box12"><?php the_field('vastuullista_kuluttamista');?></div>
-    <div class="box" id="box13"><?php the_field('ilmastotekoja');?></div>
-    <div class="box" id="box14"><?php the_field('vedenalainen_elama');?></div>
-    <div class="box" id="box15"><?php the_field('maanpaallinen_elama');?></div>
-    <div class="box" id="box16"><?php the_field('rauha_ja_oikeudenmukaisuus');?></div>
-    <div class="box" id="box17"><?php the_field('yhteistyo_ja_kumppanuus');?></div>
+    <div class="box-sdg-info" id="box1"><?php the_field('ei_koyhyytta');?></div>
+    <div class="box-sdg-info" id="box2"><?php the_field('ei_nalkaa');?></div>
+    <div class="box-sdg-info" id="box3"><?php the_field('terveytta_ja_hyvinvointia');?></div>
+    <div class="box-sdg-info" id="box4"><?php the_field('hyva_koulutus');?></div>
+    <div class="box-sdg-info" id="box5"><?php the_field('sukupuolten_tasaarvo');?></div>
+    <div class="box-sdg-info" id="box6"><?php the_field('puhdas_vesi_ja_sanitaatio');?></div>
+    <div class="box-sdg-info" id="box7"><?php the_field('edullista_ja_puhdasta_energiaa');?></div>
+    <div class="box-sdg-info" id="box8"><?php the_field('ihmisarvoista_tyota_ja_talouskasvua');?></div>
+    <div class="box-sdg-info" id="box9"><?php the_field('kestavaa_teollisuutta');?></div>
+    <div class="box-sdg-info" id="box10"><?php the_field('eriarvoisuuden_vahentaminen');?></div>
+    <div class="box-sdg-info" id="box11"><?php the_field('kestavat_kaupungit');?></div>
+    <div class="box-sdg-info" id="box12"><?php the_field('vastuullista_kuluttamista');?></div>
+    <div class="box-sdg-info" id="box13"><?php the_field('ilmastotekoja');?></div>
+    <div class="box-sdg-info" id="box14"><?php the_field('vedenalainen_elama');?></div>
+    <div class="box-sdg-info" id="box15"><?php the_field('maanpaallinen_elama');?></div>
+    <div class="box-sdg-info" id="box16"><?php the_field('rauha_ja_oikeudenmukaisuus');?></div>
+    <div class="box-sdg-info" id="box17"><?php the_field('yhteistyo_ja_kumppanuus');?></div>
   </div>
   
   <script>
     function toggleBox(index) {
-      var boxes = document.querySelectorAll(".box");
+      var boxes = document.querySelectorAll(".box-sdg-info");
       for (var i = 0; i < boxes.length; i++) {
         boxes[i].classList.remove("active");
       }

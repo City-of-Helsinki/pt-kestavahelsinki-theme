@@ -1871,7 +1871,7 @@ article {
     margin-bottom: 100px;
   }
 
-  .box {
+  .box-sdg-info {
     display: none;
     width: 1200px;
     border: 1px solid black;
@@ -1885,7 +1885,7 @@ article {
     }
   }
 
-  .box.active {
+  .box-sdg-info.active {
     display: block;
   }
 }
