@@ -341,6 +341,17 @@ function my_acf_init_block_types() {
 		));
 
 		acf_register_block_type(array(
+			'name'              => 'sdg-list',
+			'title'             => __('SDG-List'),
+			'description'       => __('SDG'),
+			'render_template'   => 'template-parts/blocks/sdg-list.php',
+			'category'          => 'custom-blocks',
+			'mode' 							=> 'edit',
+			'align' 						=> 'wide',
+			'icon'              => 'admin-comments',
+		));
+
+		acf_register_block_type(array(
 			'name'              => 'paragraph-content',
 			'title'             => __('Paragraph content'),
 			'description'       => __('Card element in content editor'),
