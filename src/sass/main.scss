@@ -1,5 +1,5 @@
 /*
- * Version: 1.1.0
+ * Version: 1.0.4
  *
  */
 
@@ -1871,7 +1871,7 @@ article {
     margin-bottom: 100px;
   }
 
-  .box-sdg-info {
+  .box {
     display: none;
     width: 1200px;
     border: 1px solid black;
@@ -1885,7 +1885,7 @@ article {
     }
   }
 
-  .box-sdg-info.active {
+  .box.active {
     display: block;
   }
 }
