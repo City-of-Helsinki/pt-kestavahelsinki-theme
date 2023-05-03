@@ -1,1 +1,25 @@
-.wp-block{max-width:850px}.wp-block[data-align=wide]{max-width:850px}.wp-block[data-align=full]{max-width:none}.repeat-horizontal .acf-repeater tbody{display:flex;flex-direction:row}.repeat-horizontal .acf-repeater tr.acf-row:not(.acf-clone){width:100%}.repeat-horizontal .acf-repeater tr.acf-row:not(.acf-clone) td.acf-fields{width:100% !important}
+.wp-block {
+  max-width: 850px;
+}
+.wp-block[data-align=wide] {
+  max-width: 850px;
+}
+.wp-block[data-align=full] {
+  max-width: none;
+}
+
+/* ACF "repeat-horizontal" class, display repeaters in horizontal columns */
+.repeat-horizontal .acf-repeater tbody {
+  display: flex;
+  flex-direction: row;
+}
+
+.repeat-horizontal .acf-repeater tr.acf-row:not(.acf-clone) {
+  width: 100%;
+}
+
+.repeat-horizontal .acf-repeater tr.acf-row:not(.acf-clone) td.acf-fields {
+  width: 100% !important; /* important is necessary because it gets overwritten on drag&drop  */
+}
+
+/*# sourceMappingURL=editor.min.css.map*/
