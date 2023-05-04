@@ -58,8 +58,8 @@
         <h1>SDG-tavoite 4: Hyvä koulutus</h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi4')?>"></span>
       </div>
-      <div class="box" id="box4"><?php the_field('hyva_koulutus1');?></div>
-      <div class="box" id="box4"><?php the_field('hyva_koulutus2');?></div>
+      <div class="box-1" id="box4"><?php the_field('hyva_koulutus1');?></div>
+      <div class="box-2" id="box4"><?php the_field('hyva_koulutus2');?></div>
     </div>
     <div class="box">
       <div class="sdg-title">
