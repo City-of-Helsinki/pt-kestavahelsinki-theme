@@ -75,6 +75,12 @@
   <?php the_field('sdg-12_table');?>
 
 <div class="table-title">
+   <img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-13.png">
+   <h1>SDG-Tavoite 13: Ilmastotekoja</h1> 
+  </div>
+  <?php the_field('sdg-13_table');?>
+
+<div class="table-title">
     <img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-14.png">
     <h1>SDG-Tavoite 14: Vedenalainen elämä</h1>
   </div>
