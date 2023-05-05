@@ -946,6 +946,7 @@ button.button.is-info {
 }
 
 .entry-content {
+  max-width: 791px;
   margin: auto;
 
   @include mobile {
@@ -1842,7 +1843,6 @@ article {
 }
 
 .sdg-list {
-  width: 920px;
 
   .grid {
     display: grid;
@@ -1944,7 +1944,6 @@ article {
 }
 
 .sdg-table {
-  width: 920px;
 
   .table-title {
     display: flex;
