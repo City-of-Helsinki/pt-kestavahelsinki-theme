@@ -27,7 +27,7 @@ $image = get_field('image');
 ?>
 
 
-<section class="<?php echo esc_attr($className); ?> wave-top bc-valkoinen" style="height:610px;">
+<section class="<?php echo esc_attr($className); ?> wave-top bc-valkoinen" style="height:650px;">
   <div class="container">
     <div class="hero-box desktop-only">
     <div class="img-container">
