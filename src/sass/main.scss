@@ -382,13 +382,13 @@ body {
 }
 
 .hero.alignfull.wave-top.bc-valkoinen {
-  background-color: #f5a3c7;
+  background-color: #ffc61e;
   height: auto;
   margin: 0;
   padding: 0;
   
   @include mobile {
-    background-color: #f5a3c7;
+    background-color: #ffc61e;
     height: auto;
   }
 }
@@ -1502,8 +1502,8 @@ button.button.is-info {
       }
     }
     
-    .video {
-      float: left;
+    .image {
+      object-fit: contain;
     }
   }
 

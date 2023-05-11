@@ -9854,14 +9854,14 @@ body {
 }
 
 .hero.alignfull.wave-top.bc-valkoinen {
-  background-color: #f5a3c7;
+  background-color: #ffc61e;
   height: auto;
   margin: 0;
   padding: 0;
 }
 @media screen and (max-width: 768px) {
   .hero.alignfull.wave-top.bc-valkoinen {
-    background-color: #f5a3c7;
+    background-color: #ffc61e;
     height: auto;
   }
 }
@@ -10835,8 +10835,9 @@ button.button.is-info {
     margin-top: 20px;
   }
 }
-.hero .hero-box .video {
-  float: left;
+.hero .hero-box .image {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .hero .button {
   display: none;

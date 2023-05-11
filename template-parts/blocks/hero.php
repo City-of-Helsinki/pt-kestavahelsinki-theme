@@ -21,16 +21,18 @@ if( !empty($block['align']) ) {
 
 // Load values and assign defaults.
 $text = get_field('text');
-$video = get_field('video');
+$image = get_field('image');
 
 
 ?>
 
 
-<section class="<?php echo esc_attr($className); ?> wave-top bc-valkoinen" style="background-color: #F5A3C7;height:610px;">
+<section class="<?php echo esc_attr($className); ?> wave-top bc-valkoinen" style="height:610px;">
   <div class="container">
     <div class="hero-box desktop-only">
-    <div style='position:relative;width:788px;height:437px;background-color:#ececec;right:15px;'><iframe style='position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;' allowfullscreen='true' allow='autoplay' scrolling='no' src="<?= $video; ?>"></iframe></div>
+    <div class="img-container">
+      <img alt="" src="<?= $image ?>">
+    </div>
     <div class="text">
     <?= $text; ?>
     </div>
@@ -41,7 +43,9 @@ $video = get_field('video');
 <section class="section mobile-hero mobile-only">
   <div class="container hero-box">
     <div class="hero-box__videowrapper">
-      <div style='background-color:#ececec;right:8px;'><iframe style='' allowfullscreen='true' allow='autoplay' scrolling='no' src="<?= $video; ?>"></iframe></div>
+    <div class="img-container">
+      <img alt="" src="<?= $image ?>">
+    </div>
     </div>
     <div class="text">
     <?= $text; ?>

@@ -18,7 +18,7 @@ get_header(); ?>
 		}
 		?>
 	</div>
-	<section class="hero alignfull" style="background-color: #FFE977;height: 600px;margin: 0;padding: 0;">
+	<section class="hero alignfull" style="background-color: #F5A3C7;height: 600px;margin: 0;padding: 0;">
 <div class="container">
 	<section class="section">
 		<header class="entry-header">
