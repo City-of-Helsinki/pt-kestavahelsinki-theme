@@ -11245,7 +11245,8 @@ article {
 
 .sdg-table {
   position: relative;
-  right: 75px;
+  right: 78px;
+  width: 947px;
 }
 .sdg-table .table-title {
   display: flex;
