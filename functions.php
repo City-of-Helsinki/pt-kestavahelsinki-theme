@@ -502,6 +502,38 @@ function kestavahelsinki_translates() {
 		pll_register_string( '/uutiset', '/uutiset', 'kestavahelsinki');
 		pll_register_string( 'Sivustohaku, syötä hakusana.', 'Sivustohaku, syötä hakusana.', 'kestavahelsinki');
 		pll_register_string( 'Avaa sivustohaku', 'Avaa sivustohaku', 'kestavahelsinki');
+		pll_register_string( 'SDG-1', 'SDG-1', 'kestavahelsinki');
+		pll_register_string( 'SDG-1-image', 'SDG-1-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-3', 'SDG-3', 'kestavahelsinki');
+		pll_register_string( 'SDG-3-image', 'SDG-3-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-4', 'SDG-4', 'kestavahelsinki');
+		pll_register_string( 'SDG-4-image', 'SDG-4-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-5', 'SDG-5', 'kestavahelsinki');
+		pll_register_string( 'SDG-5-image', 'SDG-5-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-6', 'SDG-6', 'kestavahelsinki');
+		pll_register_string( 'SDG-6-image', 'SDG-6-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-7', 'SDG-7', 'kestavahelsinki');
+		pll_register_string( 'SDG-7-image', 'SDG-7-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-8', 'SDG-8', 'kestavahelsinki');
+		pll_register_string( 'SDG-8-image', 'SDG-8-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-9', 'SDG-9', 'kestavahelsinki');
+		pll_register_string( 'SDG-9-image', 'SDG-9-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-10', 'SDG-10', 'kestavahelsinki');
+		pll_register_string( 'SDG-10-image', 'SDG-10-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-11', 'SDG-11', 'kestavahelsinki');
+		pll_register_string( 'SDG-11-image', 'SDG-11-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-12', 'SDG-12', 'kestavahelsinki');
+		pll_register_string( 'SDG-12-image', 'SDG-12-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-13', 'SDG-13', 'kestavahelsinki');
+		pll_register_string( 'SDG-13-image', 'SDG-13-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-14', 'SDG-14', 'kestavahelsinki');
+		pll_register_string( 'SDG-14-image', 'SDG-14-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-15', 'SDG-15', 'kestavahelsinki');
+		pll_register_string( 'SDG-15-image', 'SDG-15-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-16', 'SDG-16', 'kestavahelsinki');
+		pll_register_string( 'SDG-16-image', 'SDG-16-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-17', 'SDG-17', 'kestavahelsinki');
+		pll_register_string( 'SDG-17-image', 'SDG-17-image', 'kestavahelsinki');
 
 	}
 }
