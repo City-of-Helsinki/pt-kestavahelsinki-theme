@@ -11243,6 +11243,10 @@ article {
   width: 80%;
 }
 
+.sdg-table {
+  position: relative;
+  right: 75px;
+}
 .sdg-table .table-title {
   display: flex;
   margin-top: 20px;
