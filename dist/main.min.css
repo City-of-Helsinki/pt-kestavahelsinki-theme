@@ -11269,6 +11269,7 @@ article {
   margin-right: 25px;
 }
 .sdg-table .table-title h1 {
+  font-size: 2.5rem !important;
   font-weight: 800;
   color: #4a4a4a;
 }
