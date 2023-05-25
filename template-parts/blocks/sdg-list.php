@@ -9,23 +9,23 @@
 
 <div class="sdg-list alignwide">
   <div class="grid">
-    <button onclick="toggleBox(0)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-1.png"></button>
-    <button onclick="toggleBox(1)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-2.png"></button>
-    <button onclick="toggleBox(2)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-3.png"></button>
-    <button onclick="toggleBox(3)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-4.png"></button>
-    <button onclick="toggleBox(4)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-5.png"></button>
-    <button onclick="toggleBox(5)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-6.png"></button>
-    <button onclick="toggleBox(6)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-7.png"></button>
-    <button onclick="toggleBox(7)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-8.png"></button>
-    <button onclick="toggleBox(8)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-9.png"></button>
-    <button onclick="toggleBox(9)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-10.png"></button>
-    <button onclick="toggleBox(10)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-11.png"></button>
-    <button onclick="toggleBox(11)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-12.png"></button>
-    <button onclick="toggleBox(12)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-13.png"></button>
-    <button onclick="toggleBox(13)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-14.png"></button>
-    <button onclick="toggleBox(14)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-15.png"></button>
-    <button onclick="toggleBox(15)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-16.png"></button>
-    <button onclick="toggleBox(16)"><img src="https://kestavyys.hel.fi/content/uploads/2021/04/Tavoite-17.png"></button>
+    <button onclick="toggleBox(0)"><img src="<?php pll_e('SDG-1-image') ?>"></button>
+    <button onclick="toggleBox(1)"><img src="<?php pll_e('SDG-2-image') ?>"></button>
+    <button onclick="toggleBox(2)"><img src="<?php pll_e('SDG-3-image') ?>"></button>
+    <button onclick="toggleBox(3)"><img src="<?php pll_e('SDG-4-image') ?>"></button>
+    <button onclick="toggleBox(4)"><img src="<?php pll_e('SDG-5-image') ?>"></button>
+    <button onclick="toggleBox(5)"><img src="<?php pll_e('SDG-6-image') ?>"></button>
+    <button onclick="toggleBox(6)"><img src="<?php pll_e('SDG-7-image') ?>"></button>
+    <button onclick="toggleBox(7)"><img src="<?php pll_e('SDG-8-image') ?>"></button>
+    <button onclick="toggleBox(8)"><img src="<?php pll_e('SDG-9-image') ?>"></button>
+    <button onclick="toggleBox(9)"><img src="<?php pll_e('SDG-10-image') ?>"></button>
+    <button onclick="toggleBox(10)"><img src="<?php pll_e('SDG-11-image') ?>"></button>
+    <button onclick="toggleBox(11)"><img src="<?php pll_e('SDG-12-image') ?>"></button>
+    <button onclick="toggleBox(12)"><img src="<?php pll_e('SDG-13-image') ?>"></button>
+    <button onclick="toggleBox(13)"><img src="<?php pll_e('SDG-14-image') ?>"></button>
+    <button onclick="toggleBox(14)"><img src="<?php pll_e('SDG-15-image') ?>"></button>
+    <button onclick="toggleBox(15)"><img src="<?php pll_e('SDG-16-image') ?>"></button>
+    <button onclick="toggleBox(16)"><img src="<?php pll_e('SDG-17-image') ?>"></button>
   </div>
 
   <div class="box-container alignwide">
