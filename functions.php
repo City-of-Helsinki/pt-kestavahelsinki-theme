@@ -504,6 +504,8 @@ function kestavahelsinki_translates() {
 		pll_register_string( 'Avaa sivustohaku', 'Avaa sivustohaku', 'kestavahelsinki');
 		pll_register_string( 'SDG-1', 'SDG-1', 'kestavahelsinki');
 		pll_register_string( 'SDG-1-image', 'SDG-1-image', 'kestavahelsinki');
+		pll_register_string( 'SDG-2', 'SDG-2', 'kestavahelsinki');
+		pll_register_string( 'SDG-2-image', 'SDG-2-image', 'kestavahelsinki');
 		pll_register_string( 'SDG-3', 'SDG-3', 'kestavahelsinki');
 		pll_register_string( 'SDG-3-image', 'SDG-3-image', 'kestavahelsinki');
 		pll_register_string( 'SDG-4', 'SDG-4', 'kestavahelsinki');
