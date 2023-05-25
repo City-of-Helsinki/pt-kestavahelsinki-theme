@@ -31,7 +31,7 @@
   <div class="box-container alignwide">
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 1: Ei köyhyyttä</h1>
+        <h1><?php pll_e('SDG-1') ?></h1>
         <span class="circle-<?php echo get_field('circle_color')?>"></span>
       </div>
       <div class="box-1" id="box1"><?php the_field('ei_koyhyytta1');?></div>
@@ -39,7 +39,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 2: Ei nälkää</h1>
+        <h1><?php pll_e('SDG-2') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi2')?>"></span>
       </div>
       <div class="box-1" id="box2"><?php the_field('ei_nalkaa1');?></div>
@@ -47,7 +47,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 3: Terveyttä ja hyvinvointia</h1>
+        <h1><?php pll_e('SDG-3') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi3')?>"></span>
       </div>
       <div class="box-1" id="box3"><?php the_field('terveytta_ja_hyvinvointia1');?></div>
@@ -55,7 +55,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 4: Hyvä koulutus</h1>
+        <h1><?php pll_e('SDG-4') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi4')?>"></span>
       </div>
       <div class="box-1" id="box4"><?php the_field('hyva_koulutus1');?></div>
@@ -63,7 +63,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 5: Sukupuolten tasa-arvo</h1>
+        <h1><?php pll_e('SDG-5') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi5')?>"></span>
       </div>
       <div class="box-1" id="box5"><?php the_field('sukupuolten_tasaarvo1');?></div>
@@ -71,7 +71,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 6: Puhdas vesi ja sanitaatio</h1>
+        <h1><?php pll_e('SDG-6') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi6')?>"></span>
       </div>
       <div class="box-1" id="box6"><?php the_field('puhdas_vesi_ja_sanitaatio1');?></div>
@@ -79,7 +79,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 7: Edullista ja puhdasta energiaa</h1>
+        <h1><?php pll_e('SDG-7') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi7')?>"></span>
       </div>
       <div class="box-1" id="box7"><?php the_field('edullista_ja_puhdasta_energiaa1');?></div>
@@ -87,7 +87,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 8: Ihmisarvoista työtä ja talouskasvua</h1>
+        <h1><?php pll_e('SDG-8') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi8')?>"></span>
       </div>
       <div class="box-1" id="box8"><?php the_field('ihmisarvoista_tyota_ja_talouskasvua1');?></div>
@@ -95,7 +95,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 9: Kestävää teollisuutta, innovaatioita ja infrastruktuureja</h1>
+        <h1><?php pll_e('SDG-9') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi9')?>"></span>
       </div>
       <div class="box-1" id="box9"><?php the_field('kestavaa_teollisuutta1');?></div>
@@ -103,7 +103,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 10: Eriarvoisuuden vähentäminen</h1>
+        <h1><?php pll_e('SDG-10') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi10')?>"></span>
       </div>
       <div class="box-1" id="box10"><?php the_field('eriarvoisuuden_vahentaminen1');?></div>
@@ -111,7 +111,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 11: Kestävät kaupungit ja yhteisöt</h1>
+        <h1><?php pll_e('SDG-11') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi11')?>"></span>
       </div>
       <div class="box-1" id="box11"><?php the_field('kestavat_kaupungit1');?></div>
@@ -119,7 +119,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 12: Vastuullista kuluttamista</h1>
+        <h1><?php pll_e('SDG-12') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi12')?>"></span>
       </div>
       <div class="box-1" id="box12"><?php the_field('vastuullista_kuluttamista1');?></div>
@@ -127,7 +127,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 13: Ilmastotekoja</h1>
+        <h1><?php pll_e('SDG-13') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi13')?>"></span>
       </div>
       <div class="box-1" id="box13"><?php the_field('ilmastotekoja1');?></div>
@@ -135,7 +135,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 14: Vedenalainen elämä</h1>
+        <h1><?php pll_e('SDG-14') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi14')?>"></span>
       </div>
       <div class="box-1" id="box14"><?php the_field('vedenalainen_elama1');?></div>
@@ -143,7 +143,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 15: Maanpäällinen elämä</h1>
+        <h1><?php pll_e('SDG-15') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi15')?>"></span>
       </div>
       <div class="box-1" id="box15"><?php the_field('maanpaallinen_elama1');?></div>
@@ -151,7 +151,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 16: Rauha, oikeudenmukaisuus ja hyvä hallinto</h1>
+        <h1><?php pll_e('SDG-16') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi16')?>"></span>
       </div>
       <div class="box-1" id="box16"><?php the_field('rauha_ja_oikeudenmukaisuus1');?></div>
@@ -159,7 +159,7 @@
     </div>
     <div class="box">
       <div class="sdg-title">
-        <h1>SDG-tavoite 17: Yhteistyö ja kumppanuus</h1>
+        <h1><?php pll_e('SDG-17') ?></h1>
         <span class="circle-<?php echo get_field('circle_color_kopioi17')?>"></span>
       </div>
       <div class="box-1" id="box17"><?php the_field('yhteistyo_ja_kumppanuus1');?></div>
