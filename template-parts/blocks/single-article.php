@@ -20,10 +20,10 @@ if( !empty($block['align']) ) {
 }
 
 // Load values and assign defaults.
-$color = (get_field('color_pick') === 'green') ? 'green' : 
-((get_field('color_pick') === 'yellow') ? 'yellow' : 
-((get_field('color_pick') === 'dark-grey') ? 'dark-grey' : 
-((get_field('color_pick') === 'light-turqoise2') ? 'light-turqoise2' : 
+$color = (get_field('color_pick') === 'green') ? 'green' :
+((get_field('color_pick') === 'yellow') ? 'yellow' :
+((get_field('color_pick') === 'dark-grey') ? 'dark-grey' :
+((get_field('color_pick') === 'light-turqoise2') ? 'light-turqoise2' :
 ((get_field('color_pick') === 'light-blue') ? 'light-blue' :
 ((get_field('color_pick') === 'pink') ? 'pink' : '')))));
 $image = get_field('image');
@@ -34,22 +34,21 @@ $button_text = get_field('button_text')
 ?>
 
 
-<section class="section latest alignfull <?=$color; ?>">
+<section class="section latest alignfull <?php echo $color; ?>">
     <div class="container">
-      <h2 class="section-title"><?= get_field('title'); ?></h2>
+      <h2 class="section-title"><?php echo get_field('title'); ?></h2>
         <div class="article-content">
-        <a href="<?= $link ?>" class="column is-4 is-12-mobile">
+        <a href="<?php echo $link; ?>" class="column is-4 is-12-mobile">
             <figure class="image is-3by2">
-            <img class="is-square" src="<?= $image ?>" alt="">
+            <img class="is-square" src="<?php echo $image; ?>" alt="">
             </figure>
         </a>
         <div class="text">
-              <h3 class="title"><?= $articletitle ?></h3>
-              <p class="excerpt"><?=$ingressi?></p>    
+              <h3 class="title"><?php echo $articletitle; ?></h3>
+              <p class="excerpt"><?php echo $ingressi; ?></p>
         </div>
-        <a href="<?= $link; ?>" class="button"><?= $button_text ?></a>
+        <a href="<?php echo $link; ?>" class="button"><?php echo $button_text; ?></a>
           </div>
         </a>
     </div>
   </section>
-
