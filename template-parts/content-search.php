@@ -12,7 +12,7 @@
 <div class="column is-3 is-12-mobile">
 	<a href="<?php the_permalink(); ?>">
 		<figure class="image is-3by2">
-			<img class="is-square" src="<?= get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" alt="">
+			<img class="is-square" src="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" alt="">
 		</figure>
 		<div class="text-content">
 			<h3 class="title is-4 is-medium"><?php the_title(); ?></h3>
@@ -20,4 +20,3 @@
 		</div>
 	</a>
 </div>
-

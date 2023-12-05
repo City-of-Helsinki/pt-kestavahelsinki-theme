@@ -26,19 +26,20 @@
 
 
 			<div class="ote">
-				<?php 
+				<?php
 				if (get_field('ingressi')) {
 					echo get_field('ingressi');
 				}
 				?>
 			</div>
 			<?php if (in_category('uutiset')) { ?>
-				<p class="date"><?= get_the_date('d.m.Y'); ?></p> <?php }?>
+				<p class="date"><?php echo get_the_date('d.m.Y'); ?></p>
+			<?php } ?>
 			</div>
 
 
 			<div class="main-image">
-				<img src="<?= get_the_post_thumbnail_url( $post->ID, 'large' ) ?>" alt="">
+				<img src="<?php echo get_the_post_thumbnail_url( $post->ID, 'large' ); ?>" alt="">
 				<?php if (get_post(get_post_thumbnail_id())->post_excerpt) {?>
 					<div class="featured-image-caption">
 						<?php echo wp_kses_post(get_post(get_post_thumbnail_id())->post_excerpt); ?>
@@ -69,11 +70,9 @@
 				'after'  => '</div>',
 			) );
 			?>
-			
+
 		</div><!-- .entry-content -->
 
 	</div>
 
 </article><!-- #post-<?php the_ID(); ?> -->
-
-

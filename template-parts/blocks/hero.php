@@ -31,10 +31,10 @@ $image = get_field('image');
   <div class="container">
     <div class="hero-box desktop-only">
     <div class="img-container">
-      <img alt="" src="<?= $image ?>">
+      <img alt="" src="<?php echo $image; ?>">
     </div>
     <div class="text">
-    <?= $text; ?>
+    <?php echo $text; ?>
     </div>
     </div>
   </div>
@@ -44,14 +44,11 @@ $image = get_field('image');
   <div class="container hero-box">
     <div class="hero-box__videowrapper">
     <div class="img-container">
-      <img alt="" src="<?= $image ?>">
+      <img alt="" src="<?php echo $image ?>">
     </div>
     </div>
     <div class="text">
-    <?= $text; ?>
+    <?php echo $text; ?>
     </div>
   </div>
 </section>
-
-
-

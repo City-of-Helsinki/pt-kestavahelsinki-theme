@@ -16,15 +16,15 @@
 <footer class="footer wave-bottom bc-valkoinen">
 	<div class="container">
 		<div class="content">
-    <?php 
+    <?php
       if( have_rows('footer', 'options') ):
         while( have_rows('footer', 'options') ) : the_row();
-        
+
       $footer_fi = get_sub_field('footer_fi');
       $footer_en = get_sub_field('footer_en');
       $footer_sv = get_sub_field('footer_sv');
       $lang = pll_current_language();
-      
+
               if ($lang == 'fi') {
                 echo $footer_fi;
               } elseif($lang == 'en') {
@@ -32,7 +32,7 @@
               } else {
                 echo $footer_sv;
              } ?>
-             
+
             <? endwhile;
           endif;?>
     </div>
@@ -43,13 +43,13 @@
       <div class="columns is-vcentered">
         <div class="container">
           <figure class="image">
-            <img src="<?= get_stylesheet_directory_uri() ?>/images/HELSINKI_Tunnus_VALKOINEN.png" alt="Footer logo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/HELSINKI_Tunnus_VALKOINEN.png" alt="Footer logo">
           </figure>
           <div class="footer-info">
-            <span>&copy; <?php pll_e('Helsingin kaupunki') ?>, <?php echo date("Y"); ?></span> 
+            <span>&copy; <?php pll_e('Helsingin kaupunki') ?>, <?php echo date("Y"); ?></span>
 
             <?php
-            while( have_rows('footer_links', 'options') ) : the_row(); 
+            while( have_rows('footer_links', 'options') ) : the_row();
               $title = get_sub_field('otsikko');
               $title_en = get_sub_field('otsikko_en');
               $title_sv = get_sub_field('otsikko_sv');
@@ -67,7 +67,7 @@
               } else {
                echo '<a href="'.$link_sv.'">'.$title_sv.'</a>';
              }
-             
+
            endwhile;
          endif; ?>
        </div>
