@@ -18,10 +18,6 @@ $content = get_field('paragraphcontent');
 
 <section class="section <?php echo esc_attr($className); ?>">
   <div class="paragraphcontent alignwide">
-    <?= $content; ?>
+    <?php echo $content; ?>
   </div>
 </section>
-
-
-
-
