@@ -29,28 +29,29 @@ $text_side = get_field('text_side');
 $side = $text_side === 'text-right' ? 'reverse' : '';
 
 
-$color = (get_field('color_pick') === 'green') ? 'green' : ((get_field('color_pick') === 'yellow') ? 'yellow' : ((get_field('color_pick') === 'dark-grey') ? 'dark-grey' : ((get_field('color_pick') === 'light-turqoise2') ? 'light-turqoise2' : ((get_field('color_pick') === 'light-blue') ? 'light-blue' : 'pink'))));?>
+$color = (get_field('color_pick') === 'green') ? 'green' : ((get_field('color_pick') === 'yellow') ? 'yellow' : ((get_field('color_pick') === 'dark-grey') ? 'dark-grey' : ((get_field('color_pick') === 'light-turqoise2') ? 'light-turqoise2' : ((get_field('color_pick') === 'light-blue') ? 'light-blue' : 'pink'))));
+?>
 
 
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
   <div class="container">
     <div class="columns">
       <div class="column is-relative">
-        <div class="columns is-vcentered <?= $side ?>">
+        <div class="columns is-vcentered <?php echo $side; ?>">
           <div class="column articleimg">
             <div class="image is-3by2">
-              <img src="<?= $image ?>" alt="">
+              <img src="<?php echo $image; ?>" alt="">
               </div>
               <?php if( !empty(get_field('sdg'))) {?>
               <div class="image is-sdg">
-              <img src="<?= $sdg ?>" alt="">
+              <img src="<?php echo $sdg; ?>" alt="">
               </div>
               <?php } ?>
           </div>
-          <div class="column is-4 <?= $text_side.' '. $color; ?> overlapping2">
+          <div class="column is-4 <?php echo $text_side.' '. $color; ?> overlapping2">
           <div class="text"style="position: relative;top:5%%;">
-            <?= $content  ?>
-            <a href="<?= $link; ?>" class="button"><?= $button_text ?></a>
+            <?php echo $content;  ?>
+            <a href="<?php echo $link; ?>" class="button"><?php echo $button_text; ?></a>
           </a>
             </div>
         </div>
@@ -59,5 +60,3 @@ $color = (get_field('color_pick') === 'green') ? 'green' : ((get_field('color_pi
   </div>
 </div>
 </section>
-
-
