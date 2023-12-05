@@ -24,7 +24,7 @@ get_header(); ?>
 		<header class="entry-header">
 			<?php the_title( '<h1 class="section-title is-1">', '</h1>' ); ?>
 			<div class="ote">
-				<?php 
+				<?php
 				if (get_field('ingressi')) {
 					echo get_field('ingressi');
 				}
@@ -33,9 +33,9 @@ get_header(); ?>
 		</header><!-- .entry-header -->
 	</section>
 </div>
-			
 
-<section class="hero alignfull wave-bottom bc-sininen" style="background-image:url('<?= get_the_post_thumbnail_url( $post->ID, 'hero-image' ) ?>'); height: 600px;padding: 0;margin: 0;">
+
+<section class="hero alignfull wave-bottom bc-sininen" style="background-image:url('<?php echo get_the_post_thumbnail_url( $post->ID, 'hero-image' ); ?>'); height: 600px;padding: 0;margin: 0;">
 </section>
 			</section>
 
@@ -62,10 +62,10 @@ get_header(); ?>
 						'after'  => '</div>',
 					) );
 					?>
-					
-					<?php 
 
-	if( have_rows('sinua_voisi_kiinnostaa') ): ?> 
+					<?php
+
+	if( have_rows('sinua_voisi_kiinnostaa') ): ?>
 		<section class="section related">
 			<div class="container">
 				<h2 class="section-title is-2"><?php _e('Sinua voisi kiinnostaa') ?></h2>
@@ -73,17 +73,21 @@ get_header(); ?>
 					<?php while( have_rows('sinua_voisi_kiinnostaa') ) : the_row();
 
 						$title = get_sub_field('otsikko');
-						$link = get_sub_field('linkki'); 
+						$link = get_sub_field('linkki');
 
-						$target = get_sub_field() ? "_blank" : ""; 
+						$target = get_sub_field() ? "_blank" : "";
 						?>
 						<div class="column is-6 is-12-mobile">
-							<h4 class="related-title is-medium"><a target="<?= $target  ?>" href="<?= $link ?>"><?= $title ?></a></h4>
+							<h4 class="related-title is-medium">
+								<a target="<?php echo $target;  ?>" href="<?php echo $link; ?>">
+									<?php echo $title; ?>
+								</a>
+							</h4>
 							<div class="hds-icon hds-icon--size-l hds-icon--arrow-right"></div>
 						</div>
 
 					<?php endwhile; ?>
-				</div>	
+				</div>
 			</div>
 		</section>
 	<?php endif; ?>
