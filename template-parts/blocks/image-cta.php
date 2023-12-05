@@ -35,15 +35,15 @@ $color = (get_field('color_pick') === 'green') ? 'green' : ((get_field('color_pi
   <div class="container">
     <div class="columns">
       <div class="column is-relative">
-        <div class="columns is-vcentered <?= $side ?>">
+        <div class="columns is-vcentered <?php echo $side; ?>">
           <div class="column is-8-tablet">
             <div class="image is-3by2">
-              <img src="<?= $image ?>" alt="">
+              <img src="<?php echo $image; ?>" alt="">
             </div>
           </div>
-          <div class="column is-4 is-5-tablet <?= $text_side.' '. $color; ?> overlapping">
-            <?= $content  ?>
-            <a href="<?= $link; ?>" class="button"><?= $button_text ?></a>
+          <div class="column is-4 is-5-tablet <?php echo $text_side.' '. $color; ?> overlapping">
+            <?php echo $content;  ?>
+            <a href="<?php echo $link; ?>" class="button"><?php echo $button_text; ?></a>
           </a>
         </div>
       </div>
@@ -51,5 +51,3 @@ $color = (get_field('color_pick') === 'green') ? 'green' : ((get_field('color_pi
   </div>
 </div>
 </section>
-
-
