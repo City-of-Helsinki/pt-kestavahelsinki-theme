@@ -19,14 +19,14 @@ $title = get_field('contact_title');
 
 
 
-<?php 
+<?php
 if( have_rows('contacts') ): ?>
   <section class="section contact">
     <div class="container">
-      <h2 class="section-title"><?= $title ?></h2>
+      <h2 class="section-title"><?php echo $title; ?></h2>
       <div class="columns is-multiline">
         <?php while( have_rows('contacts') ) : the_row(); ?>
-          <?php 
+          <?php
           $etunimi = get_sub_field('etunimi');
           $sukunimi = get_sub_field('sukunimi');
           $titteli = get_sub_field('titteli');
@@ -35,10 +35,10 @@ if( have_rows('contacts') ): ?>
           ?>
 
           <div class="column is-3 is-12-mobile content">
-            <h4><?= $etunimi ?><br/><?= $sukunimi ?></h4>
-            <p><?= $titteli ?></p>
-            <p><?= $sahkoposti ?></p>
-            <p><?= $puhnro; ?></p>
+            <h4><?php echo $etunimi; ?><br/><?php echo $sukunimi; ?></h4>
+            <p><?php echo $titteli; ?></p>
+            <p><?php echo $sahkoposti; ?></p>
+            <p><?php echo $puhnro; ?></p>
           </div>
 
         <?php endwhile; ?>
@@ -46,5 +46,3 @@ if( have_rows('contacts') ): ?>
     </div>
   </section>
 <?php endif; ?>
-
-
