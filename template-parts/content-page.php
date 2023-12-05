@@ -14,7 +14,7 @@
 		<header class="entry-header">
 			<?php the_title( '<h1 class="section-title is-1">', '</h1>' ); ?>
 			<div class="ote">
-				<?php 
+				<?php
 				if (get_field('ingressi')) {
 					echo get_field('ingressi');
 				}
@@ -23,9 +23,9 @@
 		</header><!-- .entry-header -->
 	</section>
 </div>
-			
 
-<section class="hero alignfull wave-bottom bc-vihrea" style="background-image:url('<?= get_the_post_thumbnail_url( $post->ID, 'hero-image' ) ?>'); height: 600px;padding: 0;margin: 0;">
+
+<section class="hero alignfull wave-bottom bc-vihrea" style="background-image:url('<?php echo get_the_post_thumbnail_url( $post->ID, 'hero-image' ); ?>'); height: 600px;padding: 0;margin: 0;">
 </section>
 			</section>
 
