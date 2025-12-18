@@ -19,23 +19,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 		<?php wp_head(); ?>
-
-		<!-- Matomo -->
-		<script type="text/javascript">
-			var _paq = window._paq = window._paq || [];
-			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-			_paq.push(['trackPageView']);
-			_paq.push(['enableLinkTracking']);
-			(function() {
-				var u="//webanalytics.digiaiiris.com/js/";
-				_paq.push(['setTrackerUrl', u+'tracker.php']);
-				_paq.push(['setSiteId', '322']);
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-				g.type='text/javascript'; g.async=true; g.src=u+'piwik.min.js'; s.parentNode.insertBefore(g,s);
-			})();
-		</script>
-		<!-- End Matomo Code -->
-		
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -62,11 +45,11 @@
 									</div>
 								</div>
 								<div class="column is-narrow">
-                  
+
                   <div class="search-open-wrapper">
 									  <button class="hds-icon hds-icon--size-s hds-icon--search search-open desktop-only" aria-label="<?php pll_e('Avaa sivustohaku') ?>"></button>
                   </div>
-                    <span class="search-text" aria-hidden="true"><?php pll_e('Hae') ?></span> 
+                    <span class="search-text" aria-hidden="true"><?php pll_e('Hae') ?></span>
 									<div class="search-box" aria-expanded="false" aria-label="Avaa sivuston haku">
 										<?php get_search_form(); ?>
 									</div>
@@ -101,12 +84,12 @@
 							?>
 						</div>
 
-						
+
 					</div>
 
 					<div class="navbar-menu">
 						<div class="container">
-							<?php 
+							<?php
 							wp_nav_menu(
 								array(
 									'theme_location'  => 'primary',
