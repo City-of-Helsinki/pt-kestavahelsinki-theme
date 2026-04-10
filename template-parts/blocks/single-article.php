@@ -1,4 +1,4 @@
- <?php
+<?php
 
 /**
  * Single article Template.
@@ -32,23 +32,20 @@ $articletitle = get_field('articletitle');
 $ingressi = get_field('ingressi');
 $button_text = get_field('button_text')
 ?>
-
-
 <section class="section latest alignfull <?php echo $color; ?>">
-    <div class="container">
-      <h2 class="section-title"><?php echo get_field('title'); ?></h2>
-        <div class="article-content">
-        <a href="<?php echo $link; ?>" class="column is-4 is-12-mobile">
-            <figure class="image is-3by2">
-            <img class="is-square" src="<?php echo $image; ?>" alt="">
-            </figure>
-        </a>
-        <div class="text">
-              <h3 class="title"><?php echo $articletitle; ?></h3>
-              <p class="excerpt"><?php echo $ingressi; ?></p>
-        </div>
-        <a href="<?php echo $link; ?>" class="button"><?php echo $button_text; ?></a>
-          </div>
-        </a>
-    </div>
-  </section>
+	<div class="container">
+		<h2 class="section-title"><?php echo get_field('title'); ?></h2>
+		<div class="article-content">
+			<a href="<?php echo $link; ?>" class="column is-4 is-12-mobile">
+				<figure class="image is-3by2">
+					<img class="is-square" src="<?php echo $image; ?>" alt="">
+				</figure>
+			</a>
+			<div class="text">
+				<h3 class="title"><?php echo $articletitle; ?></h3>
+				<p class="excerpt"><?php echo $ingressi; ?></p>
+			</div>
+			<a href="<?php echo $link; ?>" class="button"><?php echo $button_text; ?></a>
+		</div>
+	</div>
+</section>
