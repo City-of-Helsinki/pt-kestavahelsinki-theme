@@ -22,4 +22,8 @@
   width: 100% !important; /* important is necessary because it gets overwritten on drag&drop  */
 }
 
+.acf-block-component a{
+  pointer-events:none;
+}
+
 /*# sourceMappingURL=editor.min.css.map*/
