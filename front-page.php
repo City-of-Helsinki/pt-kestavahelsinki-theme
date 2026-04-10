@@ -11,7 +11,7 @@ get_header();
 
 <div id="primary" class="content-area">
 
-  <?php get_template_part( 'template-parts/', 'content') ?>
+  <?php get_template_part( 'template-parts/', 'content'); ?>
 
   <?php the_content(); ?>
 
@@ -67,8 +67,8 @@ get_header();
   <?php endif; ?>
 
 
-  </div>
+</div>
 
-  <?php
+<?php
 
-  get_footer();
+get_footer();
