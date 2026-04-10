@@ -163,7 +163,7 @@ function kestavahelsinki_common_assets(): void {
 	wp_enqueue_style(
 		$owl_handle . '-default',
 		$assets_url . '/src/owlcarousel/owl.theme.default.min.css',
-		array(),
+		array( $owl_handle ),
 		$owl_version,
 		'all'
 	);
