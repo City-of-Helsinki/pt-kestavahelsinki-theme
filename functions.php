@@ -136,18 +136,73 @@ add_action( 'after_setup_theme', 'kestavahel_setup' );
 /**
  * Enqueue scripts and styles.
  */
+function kestavahelsinki_theme_version(): string {
+	return ( defined( 'WP_DEBUG' ) && WP_DEBUG )
+		? (string) time()
+		: wp_get_theme()->get( 'Version' );
+}
+
+add_action( 'enqueue_block_assets', 'kestavahelsinki_common_assets' );
+function kestavahelsinki_common_assets(): void {
+	$assets_url = get_template_directory_uri();
+	$assets_version = kestavahelsinki_theme_version();
+
+	$theme_handle = 'helsinkidesign-style';
+
+	$owl_handle = 'owl-styles';
+	$owl_version = '2.3.4';
+
+	wp_enqueue_style(
+		$owl_handle,
+		$assets_url . '/src/owlcarousel/owl.carousel.min.css',
+		array(),
+		$owl_version,
+		'all'
+	);
+
+	wp_enqueue_style(
+		$owl_handle . '-default',
+		$assets_url . '/src/owlcarousel/owl.theme.default.min.css',
+		array(),
+		$owl_version,
+		'all'
+	);
+
+	wp_enqueue_style(
+		'helsinkidesign-style',
+		$assets_url . '/dist/main.min.css',
+		array( $owl_handle ),
+		$assets_version,
+		'all'
+	);
+}
+
 function kestavahelsinki_scripts() {
+	$assets_url = get_template_directory_uri();
+	$assets_version = kestavahelsinki_theme_version();
 
-	$scriptVersion = filemtime( get_stylesheet_directory() . '/dist/theme.min.js' );
-	$styleVersion = filemtime( get_stylesheet_directory() . '/dist/main.min.css' );
+	wp_enqueue_script(
+		'helsinkidesign-scipts',
+		$assets_url . '/dist/theme.min.js',
+		array('jquery'),
+		$assets_version,
+		true
+	);
 
-	wp_enqueue_style( 'helsinkidesign-style', get_template_directory_uri() . '/dist/main.min.css', $styleVersion );
-	wp_enqueue_script( 'helsinkidesign-scipts', get_template_directory_uri() . '/dist/theme.min.js', array('jquery'), $scriptVersion, true );
+	wp_enqueue_script(
+		'owl-js',
+		$assets_url . '/src/owlcarousel/owl.carousel.min.js',
+		array('jquery'),
+		'2.3.4'
+	);
 
-	wp_enqueue_style( 'owl-styles', get_stylesheet_directory_uri() . '/src/owlcarousel/owl.carousel.min.css', '2.3.4');
-	wp_enqueue_style( 'owl-styles-default', get_stylesheet_directory_uri() . '/src/owlcarousel/owl.theme.default.min.css', array(''), '2.3.4', true );
-	wp_enqueue_script( 'owl-js', get_stylesheet_directory_uri() . '/src/owlcarousel/owl.carousel.min.js', array('jquery'), '2.3.4');
-	wp_enqueue_script( 'kestavahelsinki-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script(
+		'kestavahelsinki-skip-link-focus-fix',
+		$assets_url . '/js/skip-link-focus-fix.js',
+		array(),
+		$assets_version,
+		true
+	);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -215,11 +270,11 @@ function kestavahelsinki_custom_logo() {
 			'class'    => 'custom-logo',
 		) )
 	);
-	return $html;   
-} 
+	return $html;
+}
 
 
-function block_category( $categories, $post ) {
+function block_category( $categories, $block_editor_context ) {
 	return array_merge(
 		$categories,
 		array(
@@ -230,7 +285,7 @@ function block_category( $categories, $post ) {
 		)
 	);
 }
-add_filter( 'block_categories', 'block_category', 10, 2);
+add_filter( 'block_categories_all', 'block_category', 10, 2);
 
 
 
@@ -239,6 +294,8 @@ function my_acf_init_block_types() {
 
     // Check function exists.
 	if( function_exists('acf_register_block_type') ) {
+
+		add_filter( 'acf/blocks/default_block_version', fn() => 3 );
 
         // register a testimonial block.
 		acf_register_block_type(array(
@@ -469,7 +526,7 @@ function events_post_type() {
 add_action( 'init', 'events_post_type', 0 );
 
 /**
- * Display Post Blocks 
+ * Display Post Blocks
  *
  */
 // function display_post_blocks() {
@@ -481,7 +538,7 @@ add_action( 'init', 'events_post_type', 0 );
 
 function kestavahelsinki_translates() {
 
-	// register our translatable strings 
+	// register our translatable strings
 
 	if ( function_exists( 'pll_register_string' ) ) {
 
@@ -680,7 +737,7 @@ function loadmore_ajax_handler(){
 
 		if( have_posts() ) :
 			while( have_posts() ): the_post();
-				get_template_part( 'template-parts/blocks/category-news', 'content' ); 
+				get_template_part( 'template-parts/blocks/category-news', 'content' );
 			endwhile;
 		endif;
 	endif;
