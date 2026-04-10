@@ -1,4 +1,4 @@
- <?php
+<?php
 
 /**
  * Category Newas Template.
@@ -49,26 +49,26 @@ $query = new WP_Query($args);
 if ($query->have_posts()) :
   global $post;
   ?>
-  <section id="uutiset" class="section latest alignfull <?php echo $color; ?>" data-amount="<?php echo $amount; ?>">
-    <div class="container">
-      <h2 class="section-title"><?php echo $title; ?></h2>
-      <div class="columns is-multiline">
+	<section id="uutiset" class="section latest alignfull <?php echo $color; ?>" data-amount="<?php echo $amount; ?>">
+		<div class="container">
+			<h2 class="section-title"><?php echo $title; ?></h2>
+			<div class="columns is-multiline">
 
-        <?php while ($query->have_posts()) : $query->the_post(); ?>
+				<?php while ($query->have_posts()) : $query->the_post(); ?>
 
-          <?php get_template_part( 'template-parts/blocks/category-news', 'content' ); ?>
+					<?php get_template_part( 'template-parts/blocks/category-news', 'content' ); ?>
 
-        <?php endwhile; wp_reset_postdata(); ?>
-      </div>
+				<?php endwhile; wp_reset_postdata(); ?>
+			</div>
 
-      <?php if(is_front_page()): ?>
-        <a href="<?php echo network_site_url(); ?><?php pll_e('/uutiset');?>" style="margin-left: 0; margin-top: 0;" class="button"><?php pll_e('Kaikki uutiset'); ?></a>
-      <?php endif; ?>
+			<?php if(is_front_page()): ?>
+				<a href="<?php echo network_site_url(); ?><?php pll_e('/uutiset');?>" style="margin-left: 0; margin-top: 0;" class="button"><?php pll_e('Kaikki uutiset'); ?></a>
+			<?php endif; ?>
 
-      <?php if(is_page(array( "uutiset", "news", "nyheter" ))): ?>
-        <button class="load-more button"><?php pll_e('Lataa lisää'); ?></button>
-      <?php endif; ?>
+			<?php if(is_page(array( "uutiset", "news", "nyheter" ))): ?>
+				<button class="load-more button"><?php pll_e('Lataa lisää'); ?></button>
+			<?php endif; ?>
 
-    </div>
-  </section>
+		</div>
+	</section>
 <?php endif; ?>
