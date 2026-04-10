@@ -45,11 +45,10 @@
 									</div>
 								</div>
 								<div class="column is-narrow">
-
-                  <div class="search-open-wrapper">
-									  <button class="hds-icon hds-icon--size-s hds-icon--search search-open desktop-only" aria-label="<?php pll_e('Avaa sivustohaku') ?>"></button>
-                  </div>
-                    <span class="search-text" aria-hidden="true"><?php pll_e('Hae') ?></span>
+									<div class="search-open-wrapper">
+										<button class="hds-icon hds-icon--size-s hds-icon--search search-open desktop-only" aria-label="<?php pll_e('Avaa sivustohaku') ?>"></button>
+									</div>
+									<span class="search-text" aria-hidden="true"><?php pll_e('Hae') ?></span>
 									<div class="search-box" aria-expanded="false" aria-label="Avaa sivuston haku">
 										<?php get_search_form(); ?>
 									</div>
