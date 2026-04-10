@@ -6,7 +6,6 @@
 
 
 ?>
-
 <div class="sdg-list alignwide">
   <div class="grid">
     <button onclick="toggleBox(0)"><img src="<?php pll_e('SDG-1-image') ?>"></button>
@@ -155,7 +154,7 @@
         <span class="circle-<?php echo get_field('circle_color_kopioi16')?>"></span>
       </div>
       <div class="box-1" id="box16"><?php echo get_field('rauha_ja_oikeudenmukaisuus1');?></div>
-      <div class="box-2" id="box16"><?php echo get_field('rauha_ja_oikeudenmukaisuus2');?></div>    
+      <div class="box-2" id="box16"><?php echo get_field('rauha_ja_oikeudenmukaisuus2');?></div>
     </div>
     <div class="box">
       <div class="sdg-title">
@@ -166,7 +165,7 @@
       <div class="box-2" id="box17"><?php echo get_field('yhteistyo_ja_kumppanuus2');?></div>
     </div>
   </div>
-  
+
   <script>
     function toggleBox(index) {
       var boxes = document.querySelectorAll(".box");
