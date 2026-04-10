@@ -1,4 +1,4 @@
- <?php
+<?php
 
 /**
  * Hero Block Template.
@@ -25,30 +25,27 @@ $image = get_field('image');
 
 
 ?>
-
-
 <section class="<?php echo esc_attr($className); ?> wave-top bc-valkoinen" style="height:650px;">
-  <div class="container">
-    <div class="hero-box desktop-only">
-    <div class="img-container">
-      <img alt="" src="<?php echo $image; ?>">
-    </div>
-    <div class="text">
-    <?php echo $text; ?>
-    </div>
-    </div>
-  </div>
-</div>
+	<div class="container">
+		<div class="hero-box desktop-only">
+			<div class="img-container">
+  				<img alt="" src="<?php echo $image; ?>">
+			</div>
+			<div class="text">
+				<?php echo $text; ?>
+			</div>
+		</div>
+	</div>
 </section>
 <section class="section mobile-hero mobile-only">
-  <div class="container hero-box">
-    <div class="hero-box__videowrapper">
-    <div class="img-container">
-      <img alt="" src="<?php echo $image ?>">
-    </div>
-    </div>
-    <div class="text">
-    <?php echo $text; ?>
-    </div>
-  </div>
+	<div class="container hero-box">
+		<div class="hero-box__videowrapper">
+			<div class="img-container">
+				<img alt="" src="<?php echo $image ?>">
+			</div>
+		</div>
+		<div class="text">
+			<?php echo $text; ?>
+		</div>
+	</div>
 </section>
