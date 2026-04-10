@@ -1,4 +1,4 @@
- <?php
+<?php
 
 /**
  * Editor Card Template.
@@ -21,10 +21,8 @@ $color = (get_field('color_pick') === 'green') ? 'green' :
 ((get_field('color_pick') === 'pink') ? 'pink' : '')))));
 
 ?>
-
-
 <section class="section <?php echo esc_attr($className); ?> <?php echo $color; ?>">
-  <div class="content">
-    <?php echo $content; ?>
-  </div>
+	<div class="content">
+		<?php echo $content; ?>
+	</div>
 </section>
